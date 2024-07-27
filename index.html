@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in to Mohsen Learner</title>
+<style>
+*{
+    border:0;
+    margin:0;
+    text-decoration:none;
+    font-family:sans-serif;
+} 
+body{
+    background-image:url(https://www.independentarabia.com/sites/default/files/article/mainimage/2019/05/13/45216-610333012.jpg);
+    background-repeat:no-repeat;
+}  
+.div{
+    margin:15px;
+    width:350px;
+    height:200px;
+    background-color:darkgrey;
+    border-radius:5px;
+} 
+.space{
+    margin:30px;
+}
+.space2{
+    margin:10px;
+}
+#i{
+    background-color:antiquewhite;
+    outline:none;
+    height:40px;
+    width:200px;
+    border-radius:50px;
+}
+#b{
+    background-color:brown;
+    font-size:20px;
+    border-radius:15px;
+}
+#b2{
+    background-color:brown;
+    font-size:20px;
+    border-radius:15px;
+    display:none;
+}
+</style>    
+</head>
+<body>
+    <center>
+        <h1 class="space"></h1>
+        <h1 class="space"></h1>
+        <div class="div">
+            <center>
+                <h1>Sign in Password</h1>
+                <h1 class="space"></h1>
+                <input id="i" type="password">
+                <h1 class="space2"></h1>
+                <button id="b">Enter</button>
+                <h1 class="space2"></h1>
+                <a href="https://mariamlab123.github.io/Mohsen-Learner/index.html"><button id="b2">Open</button></a>
+            </center>
+        </div>
+    </center>
+    <script>
+        let pass= document.getElementById("i");
+        let be= document.getElementById("b");
+        let bo= document.getElementById("b2");
+        be.onclick=function(){
+            if(pass.value=="global123"){
+                bo.style.display="flex";
+            }
+            else{
+                document.write("<font color='red' size='30px'>Password wrong</font>");
+            }
+        }
+    </script>
+</body>
+</html>
